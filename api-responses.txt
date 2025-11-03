@@ -1,4 +1,5 @@
-GET /tasks → JSON array of 5 tasks
-GET /tasks/1 → JSON object for task 1
+GET /tasks/1 → { "id": 1, "title": "Learn Node.js", "completed": false, "priority": "medium", "createdAt": "2025-11-02T..." }
+
 GET /tasks/999 → { "error": "Task not found" }
+
 GET /tasks/abc → { "error": "Invalid ID format" }
