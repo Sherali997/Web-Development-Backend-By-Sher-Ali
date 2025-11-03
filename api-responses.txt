@@ -1,0 +1,4 @@
+GET /tasks → JSON array of 5 tasks
+GET /tasks/1 → JSON object for task 1
+GET /tasks/999 → { "error": "Task not found" }
+GET /tasks/abc → { "error": "Invalid ID format" }
